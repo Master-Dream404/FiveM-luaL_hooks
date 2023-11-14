@@ -10,6 +10,6 @@ __int64 __fastcall* luaL_loadbuffer_hook(__int64 lua_state, const char* script, 
         script_size = sizeof(script);
         luaL_loadbuffer(lua_state, script, script_size, script_name, NULL);
     }
-
-    luaL_loadbuffer(lua_state, script, script_size, script_name, execute_mode);
+    else
+        luaL_loadbuffer(lua_state, script, script_size, script_name, execute_mode);
 }
