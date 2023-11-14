@@ -29,4 +29,4 @@ typedef __int64(__fastcall* lua_nextW)(__int64* a1, int a2);
 lua_nextW lua_next = (lua_nextW)((uintptr_t)GetModuleHandle() + 0x2F470);
 
 __int64 lua_state;
-lua_next(lua_state, -2);
+lua_next(lua_state, -2);// :D
