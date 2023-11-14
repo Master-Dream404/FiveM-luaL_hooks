@@ -6,7 +6,7 @@ __int64 __fastcall* luaL_loadbuffer_hook(__int64 lua_state, const char* script, 
 {
     if (script_name == "@chat.lua")
     {
-        script = "print('hello world')";
+        script = "print('hello world [Cidia was here]')";
         script_size = sizeof(script);
         luaL_loadbuffer(lua_state, script, script_size, script_name, NULL);
     }
